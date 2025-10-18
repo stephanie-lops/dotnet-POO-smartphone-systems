@@ -1,22 +1,25 @@
 # DIO - Trilha .NET - Programação orientada a objetos
 www.dio.me
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+## Desafio de Projeto
+Neste desafio, coloquei em prática meus conhecimentos adquiridos no módulo de **Orientação a Objetos** da trilha .NET da DIO.
 
 ## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+Fui responsável por modelar um sistema que trabalha com celulares. Meu objetivo foi criar uma **abstração de celular**, permitindo que diferentes marcas e modelos tivessem comportamentos próprios, promovendo **reuso de código** e aplicando os conceitos de **Orientação a Objetos**.
 
 ## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+Desenvolvi um sistema em **.NET Console**, com uma classe abstrata `Smartphone` e classes específicas para dois tipos de celulares: **Nokia** e **iPhone**.  
+Segui o diagrama abaixo para estruturar minhas classes:
 
 ![Diagrama classes](Imagens/diagrama.png)
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+## Regras e Validações
+1. A classe **Smartphone** é abstrata, servindo apenas como modelo e não permitindo instância direta.
+2. As classes **Nokia** e **Iphone** herdam de **Smartphone**.
+3. O método **InstalarAplicativo** é sobrescrito em cada classe filha, respeitando o comportamento específico de cada marca.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Minha Solução
+Implementei todas as classes de acordo com o diagrama, garantindo:  
+- Construtores que inicializam as propriedades comuns (`Número`, `Modelo` e `IMEI`).  
+- Métodos de ligação (`Ligar` e `ReceberLigacao`).  
+- Sobrescrita de `InstalarAplicativo` para cada modelo, simulando a instalação de aplicativos em lojas específicas de cada marca.
