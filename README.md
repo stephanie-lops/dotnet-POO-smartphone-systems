@@ -1,3 +1,33 @@
+# DIO - .NET Track - Object-Oriented Programming  
+www.dio.me  
+
+## Project Challenge  
+In this challenge, I put into practice the knowledge I acquired in the **Object-Oriented Programming** module of DIO’s .NET track.  
+
+## Context  
+I was responsible for modeling a system that works with mobile phones.  
+My goal was to create a **cell phone abstraction**, allowing different brands and models to have their own behaviors, promoting **code reuse** and applying **Object-Oriented Programming** concepts.  
+
+## Proposal  
+I developed a **.NET Console** system with an abstract class called `Smartphone` and specific classes for two phone types: **Nokia** and **iPhone**.  
+I followed the diagram below to structure my classes:  
+
+![Class diagram](Images/diagram.png)  
+
+## Rules and Validations  
+1. The **Smartphone** class is abstract — it serves only as a model and cannot be instantiated directly.  
+2. The **Nokia** and **iPhone** classes inherit from **Smartphone**.  
+3. The **InstallApp** method is overridden in each subclass, respecting the specific behavior of each brand.  
+
+## My Solution  
+I implemented all classes according to the diagram, ensuring:  
+- Constructors initialize the common properties (`Number`, `Model`, and `IMEI`).  
+- Methods for making and receiving calls (`Call` and `ReceiveCall`).  
+- Overridden `InstallApp` methods for each model, simulating app installation through each brand’s specific store.  
+
+
+
+
 # DIO - Trilha .NET - Programação orientada a objetos
 www.dio.me
 
